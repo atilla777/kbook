@@ -76,9 +76,9 @@ curl -XPOST localhost:9200/<индекс>/<тип>/_bulk --data-binary файл
 ```shell
 curl localhost:9200/<индекс>/_search?q=*
 ```
-ил
+или
 ```shell
-curl -XPOST -H "Content-Type: application/json" "localhost:9200/<индекс>/_search" -d "
+curl -XPOST -H 'Content-Type: application/json" "localhost:9200/<индекс>/_search" -d "
 {
   "query": { "match_all": {} }
 }"
