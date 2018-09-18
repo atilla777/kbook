@@ -17,13 +17,13 @@
 ```shell
 curl localhost:9200
 ```
-Индексы узла
-```shell
-curl localhost:9200/_cat/indices
-```
 Перечень доступных диагностических полей
 ```shell
 curl localhost:9200/_cat
+```
+Индексы узла
+```shell
+curl localhost:9200/_cat/indices?v
 ```
 Состояние работоспособности
 ```shell
