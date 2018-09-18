@@ -46,7 +46,7 @@ end
 ```ruby
 begin
   код
-rescue Interupt => _
+rescue Interrupt => _
   код обработки исключения
 end
 ```
