@@ -75,7 +75,7 @@ sudo systemctl enable packetbeat
 ```bash
 sudo packetbeat setup --dashboards
 ```
-Настройка Packetbeat производится в файле:
+Настройка Packetbeat производится в файле
 **/etc/packetbeat/packetbeat.yaml**
 Значание параметров по умолчанию находятс яв той же папке в файле
 **packetbeat.reference.yml**
@@ -94,15 +94,15 @@ logging.to_files: true
 Для того, что бы убедиться в том, что связка Packetbeat - Elasticsearch работает (информация о сетевых пакетах собирается и индексируется) можно сделать запрос к Elasticsearch - найти все документы (выведены будут первые 10)
 Для этого вначале надо узнать название индекса Elasticsearch в котором хранится информация от Packetbeat
 ```bash
-curl 'localhost:9200/_cat/indices'
+curl 'localhost:9200/_cat/indices?v'
 ```
-Зная имя индекса
+Зная имя индекса (можно использовать символ * в качестве замены любых символов в имени индекса)
 ```bash
 curl 'localhost:9200/packetbeat-6.4.0-2018.09.17/_search?q=*&pretty'
 ```
 Поиск DNS запроса по IP адресу:
 ```bash
-curl -XPOST -H 'Content-Type: application/json' 'localhost:9200/packetbeat-6.4.0-2018.09.17/_search' -d'
+curl -XPOST -H 'Content-Type: application/json' 'localhost:9200/packetbeat*/_search' -d'
 {
   "query": {
     "bool": {
