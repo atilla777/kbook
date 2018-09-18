@@ -208,7 +208,7 @@ git remote add production user@example.com:/apps/mynewapp
 3) Непосредственно создание репазитория (в том числе и соответствующей папки, если она не существует) и hooks скриптов выполняется командой:
 ```bash
 git deploy setup -r "production"
-
+```
 4) Установка и настройка скриптов в папке deploy удаленного репазитория
 ```bash
 git deploy init
