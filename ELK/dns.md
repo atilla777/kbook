@@ -80,13 +80,17 @@ sudo packetbeat setup --dashboards
 Значание параметров по умолчанию находятс яв той же папке в файле
 **packetbeat.reference.yml**
 Для сбора информации о DNS трафике этот файл должен выглядить следующим образом
-packetbeat.interfaces.device: en0
-packetbeat.protocols.dns:
+
+packetbeat.interfaces.device: any
+packetbeat.protocols:
+- type: dns
   ports: [53]
   include_authorities: true
   include_additionals: true
 output.elasticsearch:
   hosts: ["localhost:9200"]
+logging.to_files: true
+  
 Для того, что бы убедиться в том, что связка Packetbeat - Elasticsearch работает (информация о сетевых пакетах собирается и индексируется) можно сделать запрос к Elasticsearch - найти все документы (выведены будут первые 10)
 Для этого вначале надо узнать название индекса Elasticsearch в котором хранится информация от Packetbeat
 ```bash
