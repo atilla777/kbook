@@ -6,3 +6,5 @@
   * [Настройка для себя любимого](./linux/customization.md)
 3. ELK
   * [Пассивный DNS](./ELK/dns.md)
+4. [Ruby](./ruby/index.md)
+5. [Git](./git/index.md)
