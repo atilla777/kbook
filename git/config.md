@@ -8,9 +8,9 @@ git config --global merge.tool vimdiff
 ```
 Добавление удаленного репозитория - доступ к github по паролю
 ```shell
-git remote add origin https://github.com/пользователь/<имя репозитория>.git
+git remote add origin https://github.com/<пользователь>/<репозиторий>.git
 ```
 Добавление удаленного репозитория - доступ к github по сертификату
 ```shell
-git remote add origin git@github.com:пользователь/репозиторий.git
+git remote add origin git@github.com:<пользователь>/<репозиторий>.git
 ```
