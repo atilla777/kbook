@@ -103,7 +103,6 @@ git add .
 git add .
 ```
 3) проиндексированные файлы (staged)
-```bash
 3 -> 4
 ```bash
 git commit -m "описание"
