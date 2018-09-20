@@ -1,4 +1,4 @@
-## Пассивный DNS
+## Пассивный DNS на основе ELK
 ### Установка ELK
 #### Установка Elasticsearch
 Установить Elasticsearch согласно (официальной документации)[https://www.elastic.co/guide/en/elasticsearch/reference/6.4/deb.html]:
@@ -77,9 +77,9 @@ sudo packetbeat setup --dashboards
 ```
 Настройка Packetbeat производится в файле
 **/etc/packetbeat/packetbeat.yaml**
-Значание параметров по умолчанию находятс яв той же папке в файле
+Значение параметров по умолчанию находятся в той же папке в файле
 **packetbeat.reference.yml**
-Для сбора информации о DNS трафике этот файл должен выглядить следующим образом
+Для сбора информации о DNS трафике этот файл должен выглядеть следующим образом
 
 packetbeat.interfaces.device: any
 packetbeat.protocols:

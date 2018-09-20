@@ -8,7 +8,7 @@ sudo update-alternatives --config editor
 ```bash
 vim ~/.vimrc
 ```
-Втсавить в стартовую конфигурацию vim:
+Вставить в стартовую конфигурацию vim:
 ```vi
 set nocompatible              " be iMproved, required
 syntax on
