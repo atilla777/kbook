@@ -23,6 +23,10 @@ curl localhost:9200/_cat
 ```shell
 curl localhost:9200/_cat/indices?v
 ```
+Mapping индекса
+```bash
+curl  localhost:9200/logst*/_mapping?pretty
+```
 Состояние работоспособности
 ```shell
 curl localhost:9200/_cat/health?v
@@ -73,7 +77,7 @@ curl -XPOST localhost:9200/<индекс>/<тип>/_bulk {запрос}
 curl -XPOST localhost:9200/<индекс>/<тип>/_bulk --data-binary файл
 ```
 ### Поиск данных
-#### Осноные служебные поля
+#### Основные служебные поля
 Поля которые начинаются с символа **_** являются служебными (например, _source).
 
 В поле **_source** содержится исходный (индексируемый) документ (json объект).
