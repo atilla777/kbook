@@ -323,8 +323,9 @@ curl -XGET http://127.0.0.1:9200/<индекс>/_mapping?pretty > mapping.json
 
 Затем шаблон загружается в ES:
 ```bash
-curl -XPUT http://localhost:9200/_template/<индекс>_template?pretty -d @<шаблон>.json
+curl -XPUT -H "Content-Type: application/json" http://localhost:9200/_template/<индекс>_template?pretty -d @<шаблон>.json
 ```
+Подробнее про mapping можно почитать [здесь](https://www.elastic.co/blog/logstash_lesson_elasticsearch_mapping)
 #### Фильтр Multilane
 Multilane – плагин фильтрации многострочных логов (в rails многострочные логи).
 
