@@ -1,7 +1,9 @@
 ## Пассивный DNS на основе ELK
-### Установка ELK
-#### Установка Elasticsearch
-Установить Elasticsearch согласно (официальной документации)[https://www.elastic.co/guide/en/elasticsearch/reference/6.4/deb.html]:
+### ELK
+#### Установка [Elasticsearch](./elasticsearch.md)
+Установить Elasticsearch согласно [официальной документации](https://www.elastic.co/guide/en/elasticsearch/reference/6.4/deb.html).
+
+В Ubuntu Linux это выглядит следующим образом
 ```bash
 wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add -
 echo "deb https://artifacts.elastic.co/packages/6.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-6.x.list
@@ -11,7 +13,7 @@ sudo apt-get update && sudo apt-get install elasticsearch
 ```bash
 sudo systemctl status elasticsearch
 ```
-Запуск Elasticsearch
+#### Запуск Elasticsearch
 ```bash
 sudo systemctl start elasticsearch
 ```
@@ -27,31 +29,11 @@ sudo journalctl -f
 ```bash
 curl -X  GET localhost:9200
 ```
+#### Настройка Elasticsearch
 Настройка Elasticsearch производится в файле:
 **/etc/elasticsearch/elasticsearch.yaml**
-#### Установка Kibana
-Установка производится согласно (официальной документации)[https://www.elastic.co/guide/en/kibana/current/deb.html]
-Если Elasticsearch уже установлен, установка выглядит следующим образом:
-```bash
-sudo apt-get install kibana
-```
-Статус Kibana
-```bash
-sudo systemctl status kibana
-```
-Запуск Kibana
-```bash
-sudo systemctl start kibana
-```
-Запуск Kibana при загрузке ОС
-```bash
-sudo systemctl enable kibana
-```
-Запрос к Kibana (проверка работоспособности) - перейти по ссылке:
-**http://localhost:5601**
-Настройка Kibana производится в файле:
-**/etc/kibana/kibana.yaml**
-### Установка Packetbeat
+### [Packetbeat](./packetbeat.md)
+#### Установка Packetbeat
 Установка производится согласно (официальной документации)[https://www.elastic.co/guide/en/beats/packetbeat/current/packetbeat-installation.html]
 Выглядит это следующим образом:
 ```bash
@@ -63,6 +45,27 @@ sudo dpkg -i packetbeat-6.4.0-amd64.deb
 ```bash
 sudo systemctl status packetbeat
 ```
+#### Настройка packetbeat
+Настройка Packetbeat производится в файле
+
+**/etc/packetbeat/packetbeat.yaml**
+
+Значение параметров по умолчанию находятся в той же папке в файле
+
+**packetbeat.reference.yml**
+Для сбора информации только о DNS трафике (packetbeat может собирать данные о других протоколах) этот файл должен выглядеть следующим образом
+```
+packetbeat.interfaces.device: any
+packetbeat.protocols:
+- type: dns
+  ports: [53]
+  include_authorities: true
+  include_additionals: true
+output.elasticsearch:
+  hosts: ["localhost:9200"]
+logging.to_files: true
+```
+#### Запуск Packetbeat
 Запуск Packetbeat
 ```bash
 sudo systemctl start packetbeat
@@ -75,22 +78,8 @@ sudo systemctl enable packetbeat
 ```bash
 sudo packetbeat setup --dashboards
 ```
-Настройка Packetbeat производится в файле
-**/etc/packetbeat/packetbeat.yaml**
-Значение параметров по умолчанию находятся в той же папке в файле
-**packetbeat.reference.yml**
-Для сбора информации о DNS трафике этот файл должен выглядеть следующим образом
+В Windows запуск **packetbeat.exe** должен осущесвляться из папки в которой находится указаный файл (при запуске packetbeat будет искать свой конфигурационный файл в текущей директории).
 
-packetbeat.interfaces.device: any
-packetbeat.protocols:
-- type: dns
-  ports: [53]
-  include_authorities: true
-  include_additionals: true
-output.elasticsearch:
-  hosts: ["localhost:9200"]
-logging.to_files: true
-  
 Для того, что бы убедиться в том, что связка Packetbeat - Elasticsearch работает (информация о сетевых пакетах собирается и индексируется) можно сделать запрос к Elasticsearch - найти все документы (выведены будут первые 10)
 Для этого вначале надо узнать название индекса Elasticsearch в котором хранится информация от Packetbeat
 ```bash
@@ -114,3 +103,27 @@ curl -XPOST -H 'Content-Type: application/json' 'localhost:9200/packetbeat*/_sea
     }
   }
 }'
+```
+### Kibana
+#### Установка и запуск
+Установка производится согласно (официальной документации)[https://www.elastic.co/guide/en/kibana/current/deb.html]
+Если Elasticsearch уже установлен, установка выглядит следующим образом:
+```bash
+sudo apt-get install kibana
+```
+Статус Kibana
+```bash
+sudo systemctl status kibana
+```
+Запуск Kibana
+```bash
+sudo systemctl start kibana
+```
+Запуск Kibana при загрузке ОС
+```bash
+sudo systemctl enable kibana
+```
+Запрос к Kibana (проверка работоспособности) - перейти по ссылке:
+**http://localhost:5601**
+Настройка Kibana производится в файле:
+**/etc/kibana/kibana.yaml**
