@@ -1,2 +1,2 @@
 ## Сканирование
-### [sqlmap](./scan/index.md)
+### [sqlmap](./index.md)
