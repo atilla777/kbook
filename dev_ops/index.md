@@ -1,3 +1,3 @@
 
 ## DevOps
-### [Dicker](./docker.md)
+### [Docker](./docker.md)
