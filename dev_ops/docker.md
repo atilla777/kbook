@@ -67,7 +67,7 @@ docker exec <ID контейнера> <команда>
 ```bash
 docker images
 ```
-> Опция **-a** позволяет увидеть все образы
+> Опция **-a** позволяет увидеть все образы (не только базовые, полученные из репозитория)
 
 Атрибуты образа
 * ID - уникальный на локальном хосте идентификатор образа
@@ -123,7 +123,7 @@ docker ps
 ```bash
 docker inspect <ID контейнера>
 ```
-#### Удалить контейнер
+#### Удалить контейнер (по сути - удаление слоя для записи)
 ```bash
 docker rm <контейнер>
 ```
@@ -139,9 +139,18 @@ docker kill <ID контейнера>
 ### Работа с реестром (репозииторием)
 #### Скачать образ
 ```bash
-docker pull <репозиторий>/<тег>
+docker pull <репозиторий>/<тег>:<версия>
 ```
-> по умолчанию тег - **latest**
+> по умолчанию версия - **latest** (последняя)
 
+### Docker compose
+#### Установка
+```bash
+sudo apt-get install docker-compose
+```
+#### Разворачивание контейнеров из файла docker-compose.yml
+```bash
+sudo docker-compose up
+```
 ### Ссылки
-* Docker в картинках - [оригинал](http://merrigrove.blogspot.com/2015/10/visualizing-docker-containers-and-images.html) , [перевод](https://habr.com/post/272145/)
+* Docker в картинках - [оригинал](http://merrigrove.blogspot.com/2015/10/visualizing-docker-containers-and-images.html), [перевод](https://habr.com/post/272145/)
