@@ -116,6 +116,18 @@ some_object1.some_object2.method
 ```ruby
 some_hash.keys.each { |k| puts k}
 ```
+### Неявная (утиная) типизация
+Вместо выбора посылаемого метода на основе типа объекта
+```ruby
+case some_object
+when String
+  some_object.some_method1
+when Integer
+   some_object.some_method2
+end
+```
+необходимо реализовать в объекте неявный тип, то есть заменить селектор класса на открытый интерфейс (метод) неявного типа.
+### Наследование
 ### Литература
 [Practical Object-Oriented Design in Ruby: An Agile Primer](https://www.oreilly.com/library/view/practical-object-oriented-design/9780132930895/)
 
