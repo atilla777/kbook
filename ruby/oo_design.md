@@ -138,7 +138,7 @@ end
 
 В абстрактном классе должны быть все шаблонные методы.
 
-Шаблонный метод в абстрактном классе должен возвращать ошибку NotImplementedError, что бы разработчик подкласса.
+Шаблонный метод в абстрактном классе должен возвращать ошибку NotImplementedError, что бы облегчить жизнь разработчику подкласса.
 ```ruby
   def template_method
     raise NotImplementedError, "subclass did not define #template_method"
