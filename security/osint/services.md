@@ -43,7 +43,7 @@
 Поиск персоналей, организаций и связей между ними.
 
 [https://www.paterva.com](https://www.paterva.com)
-####
+#### Stop forum spam
 База форумных (wiki, чат и прочих) спамеров.
 
 [http://www.stopforumspam.com](http://www.stopforumspam.com)
@@ -57,7 +57,7 @@
 [https://www.robtex.com](https://www.robtex.com)
 #### Список узлов Tor
 [http://torstatus.blutmagie.de/query_export.php/Tor_query_EXPORT.csv](http://torstatus.blutmagie.de/query_export.php/Tor_query_EXPORT.csv)
-#### Поиск узлов Tor
+
 [https://check.torproject.org/exit-addresses](https://check.torproject.org/exit-addresses)
 #### Преобразование коротких ссылок в нормальные
 [https://unshorten.link](https://unshorten.link)
