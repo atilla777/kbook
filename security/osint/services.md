@@ -29,8 +29,13 @@
 Поиск информации по IP-адресу, URL, сертификату (аналог Shodan).
 
 [https://censys.io](https://censys.io)
+#### Netcraft
+Информацию по сайту
+
+[https://www.netcraft.com](https://www.netcraft.com)
 #### Phishtank
-Проверка сайта на принадлежность к фишинговому
+Проверка сайта на принадлежность к фишинговому.
+
 [http://www.phishtank.com](http://www.phishtank.com)
 #### Pulsedive
 Поиск по базе IoC.
@@ -79,3 +84,7 @@
 [https://ransomwaretracker.abuse.ch/tracker](https://ransomwaretracker.abuse.ch/tracker)
 #### Поиск сертификатов по имени организации, домену или хэшу
 [https://crt.sh](https://crt.sh)
+
+#### MX Tollbox
+Набор инструментов типа whois, nslookup.
+[https://mxtoolbox.com](https://mxtoolbox.com)
