@@ -98,6 +98,15 @@
 #### Поиск сертификатов по имени организации, домену или хэшу
 [https://crt.sh](https://crt.sh)
 
+#### You Get Signal
+Информация об авторе письма или телефоне.
+
+https://www.yougetsignal.com
 #### MX Tollbox
 Набор инструментов типа whois, nslookup.
 [https://mxtoolbox.com](https://mxtoolbox.com)
+
+#### Archive.org
+Архивные версии сайтов.
+
+[http://archive.org/web/web.php](http://archive.org/web/web.php)
