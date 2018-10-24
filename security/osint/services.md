@@ -83,6 +83,10 @@
 Поиск угроз связанных с IP, доменом и т.п.
 
 [https://isc.sans.edu](https://isc.sans.edu)
+#### Have i been pwned?
+Проверка email адресов, паролей на компроментацию.
+
+[https://haveibeenpwned.com](https://haveibeenpwned.com)
 #### Cybercrime tracker
 База (трекер) сайтов C&C, распространителей вредоносного ПО
 
