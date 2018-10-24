@@ -39,13 +39,18 @@
 [http://www.phishtank.com](http://www.phishtank.com)
 #### Pulsedive
 Поиск по базе IoC.
+
 [https://pulsedive.com](https://pulsedive.com)
+#### ThreatMiner
+Поиск информации по IP-адресу, URL, сертификату, хэшу и т.п. (аналог Shodan).
+
+[https://www.threatminer.org](https://www.threatminer.org)
 #### URLhaus
 Проверка URL, доменов, хэшей на связь с вредоносным ПО.
 
 [https://urlhaus.abuse.ch](https://urlhaus.abuse.ch)
 #### Maltego
-Поиск персоналей, организаций и связей между ними.
+Поиск информаци о хостах, людях, организациях и связей между ними.
 
 [https://www.paterva.com](https://www.paterva.com)
 #### Stop forum spam
@@ -56,6 +61,10 @@
 Поиск информации об угрозах по IP, домену, email, организации (сервис Alien Vault).
 
 [https://www.threatcrowd.org](https://www.threatcrowd.org)
+#### IPinfo
+Информация об IP-адресе, AS.
+
+[https://ipinfo.io](https://ipinfo.io)
 #### Robtex
 Поиск информации по IP, домену, AS.
 
