@@ -1,7 +1,25 @@
-Установить vi редактором по умолчанию:
+## Кастомизация рабочего окружения Linux
+#### Установка vi как редактора строки shell в текущем сеансе
+
+```bash
+set -o vi
+```
+То же самое, для всех сеансов — добавить set -o vi в файл
+
+**~/.bashrc**
+#### Установить vi редактором по умолчанию
 ```bash
 sudo update-alternatives --config editor
 ```
+#### Отображение в строке shell текущей ветки git
+В **~/.bashrc**
+```bash
+parse_git_branch() {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+PS1="\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+```
+#### Vundle плагин для Vim
 Установить [Vundle](https://github.com/VundleVim/Vundle.vim) по инструкции сайта прокекта.
 
 Открыть файл конфигурации **vim**:
