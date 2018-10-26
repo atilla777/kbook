@@ -1,2 +1,2 @@
 ## Ruby on Rails
-### [Миграции](./migration)
+### [Миграции](./migration.md)
