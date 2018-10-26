@@ -3,5 +3,6 @@
 2. [Linux](./linux/index.md)
 3. [ELK](./ELK/index.md)
 4. [Ruby](./ruby/index.md)
+4. [Ruby on Rails](./rails/index.md)
 5. [Git](./git/index.md)
 6. [DevOps](./dev_ops/index.md)
