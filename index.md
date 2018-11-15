@@ -6,3 +6,4 @@
 4. [Ruby on Rails](./rails/index.md)
 5. [Git](./git/index.md)
 6. [DevOps](./dev_ops/index.md)
+7. [RISM](./rism/index.md)
