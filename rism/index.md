@@ -1,4 +1,5 @@
-## RISM
+## [RISM](https://github.com/atilla777/rism)
+### [Установка](./install/index.md)
 ### [Общие сведения и начало работы](./basic/index.md)
 ### [Управление доступом и разграничение прав](./rights/index.md)
 ### [Контроль периметра (сетевое сканирование)](./scan/index.md)
