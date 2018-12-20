@@ -52,6 +52,7 @@ rails secret
 * API ключ Shodan, если будет использоваться сканировние через https://www.shodan.io/
 * API ключ Vuldb, если по версии сервиса будут искаться уязвимости на сайте https://vuldb.com/
 * пароль учетной записи пользователя Postgresql (**rism**), если вы его сменили
+
 Перезапустить сервер веб приложения **puma** и сервер фоновых задач **sidekiq**:
 ```bash
 sudo systemctl restart puma
