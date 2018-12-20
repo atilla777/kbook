@@ -3,7 +3,7 @@
 ### Установка из образа виртуальной машины
 Установить Oracle VirtualBox.
 
-Скачать [образ](https://yadi.sk/d/N-HljDyT3Ymoet) виртуального сервера с приложением RISM (MD5 4f1b5a04b12bf86ede3c1e28a46b0ac6).
+Скачать [образ](https://yadi.sk/d/N-HljDyT3Ymoet) виртуального сервера с приложением RISM (MD5 2F21EECF0C786E21E084079EE831D91B, SHA256 1D68445E20810072C370E54C7DF06874155DCAB36917BEBEB493B3993646E5AD).
 
 Запустить виртуальную машину.
 
