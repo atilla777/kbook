@@ -1,3 +1,5 @@
+##### [Linux](index.md)
+##### [Главная страница](../index.md)
 ## [Iptables](https://netfilter.org/)
 #### Текущие правила
 ```bash

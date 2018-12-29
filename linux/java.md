@@ -1,3 +1,5 @@
+##### [Linux](index.md)
+##### [Главная страница](../index.md)
 ### Java в Ubuntu Linux
 Поиск доступных пакетов Java (ищутся OpenJDK версии)
 ```bash
