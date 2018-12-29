@@ -1,5 +1,5 @@
-##### [Ruby](index.md)
 ##### [Главная страница](../index.md)
+##### [Ruby](index.md)
 ## Объектно ориентированное проектирование
 ### Основные принципы
 * [SOLID](https://ru.wikipedia.org/wiki/SOLID)

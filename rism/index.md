@@ -1,3 +1,4 @@
+##### [Главная страница](../../index.md)
 ## [RISM](https://github.com/atilla777/rism)
 ### [Установка](./install/index.md)
 ### [Общие сведения и начало работы](./basic/index.md)
