@@ -1,3 +1,5 @@
+##### [ELK](index.md)
+##### [Главная страница](../index.md)
 ## Пассивный DNS на основе ELK
 ### ELK
 #### Установка [Elasticsearch](./elasticsearch.md)

@@ -1,3 +1,5 @@
+##### [ELK](index.md)
+##### [Главная страница](../index.md)
 ## [Elasticsearch](https://www.elastic.co/products/elasticsearch)
 ### Основные сведения
 * Узел (нода, node) - один сервер Elasticsearch (далее - ES).
