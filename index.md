@@ -7,3 +7,4 @@
 5. [Git](./git/index.md)
 6. [DevOps](./dev_ops/index.md)
 7. [RISM](./rism/index.md)
+8. [Прочее](./other/index.md)
