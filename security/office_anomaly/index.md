@@ -105,4 +105,4 @@ RTF документы не могут содержать макросы, но �
 * [www.decalage.info](https://www.decalage.info/en/file_formats_security)
 * [www.decalage.info](https://www.decalage.info/vba_tools)
 * [oledump.py]( https://blog.didierstevens.com/programs/oledump-py/)
-*[youtube](https://www.youtube.com/user/dist67/videos)
+* [youtube](https://www.youtube.com/user/dist67/videos)
