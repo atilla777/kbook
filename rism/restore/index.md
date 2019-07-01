@@ -35,14 +35,14 @@ tar -zxvf pg_wal.tar.gz -C /var/lib/postgresql/10/main
 ```bash
 sudo rm var/lib/postgresql/10/main/recovery.conf
 ```
-11.	Запустить СУБД
-```bash
-sudo systemctl start postgresql
-```
-12.	Восстановить права доступа к файлам базы данных
+11.	Восстановить права доступа к файлам базы данных
 ```bash
 sudo chown –R postgres:postgres /var/lib/postgresql/10/main/
 sudo chmod 700 -R /var/lib/postgresql/10/main/
+```
+12.	Запустить СУБД
+```bash
+sudo systemctl start postgresql
 ```
 13.	Запустить остальные сервисы RISM
 ```bash
