@@ -37,7 +37,7 @@ sudo rm var/lib/postgresql/10/main/ recovery.conf
 ```
 11.	Запустить СУБД
 ```bash
-sudo systemctl stop sidekiq
+sudo systemctl start postgresql
 ```
 12.	Восстановить права доступа к файлам базы данных
 ```bash
