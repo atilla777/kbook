@@ -33,7 +33,7 @@ tar -zxvf pg_wal.tar.gz -C /var/lib/postgresql/10/main
 ```
 10.	Удалить из восстановленных файлов файл recovery.conf
 ```bash
-sudo rm var/lib/postgresql/10/main/ recovery.conf
+sudo rm var/lib/postgresql/10/main/recovery.conf
 ```
 11.	Запустить СУБД
 ```bash
