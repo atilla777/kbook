@@ -288,7 +288,7 @@ cap production puma:nginx_config
 ```
 Проверяем и при необходимости кастомизируем настройки **nginx** на сервере:
 
-**/etc/nginx/sites-available/rism_puma**
+**/etc/nginx/sites-available/rism_production**
 > ! в указанном выше файле может быть неверно указан параметр **proxy_set_header**, правильный вид настройки:
 **proxy_set_header Host $http_host;**
 
