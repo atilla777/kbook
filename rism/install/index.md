@@ -255,8 +255,8 @@ mkdir /home/rism/prod/shared
 ```
 Скопировать настройки сервисов puma и sidekiq:
 ```bash
-cp /home/dev/rism/puma.service /home/rism/prod/shared/puma.service
-cp /home/dev/rism/sidekiq.service /home/rism/prod/shared/sidekiq.service
+cp /home/rism/dev/rism/puma.service /home/rism/prod/shared/puma.service
+cp /home/rism/dev/rism/sidekiq.service /home/rism/prod/shared/sidekiq.service
 ```
 Скопировать файл с паролями и настройками:
 ```bash
