@@ -200,7 +200,6 @@ bundle
 ```
 Создать базу данных, наполнить ее начальными данными и запустить приложение:
 ```bash
-bundle
 rails db:setup
 rails db:migrate
 rails db:seed
