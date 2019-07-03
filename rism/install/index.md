@@ -262,8 +262,11 @@ cp /home/rism/dev/rism/sidekiq.service /home/rism/prod/shared/sidekiq.service
 ```bash
 cp /home/rism/dev/rism/.env.production /home/rism/prod/shared/.env.production
 ```
+> Описанные ниже команды rails и cap выполняются в папке /home/dev/rism
+
 Сгенерировать секретный ключ:
 ```bash
+cd /home/dev/rism
 rails secret
 ```
 Далее необходимо в папке /home/rism/prod/shared отредактировать файл **.env.production**, указав в нем учетную запись пользователя Postgresl (**rism**), ее пароль, сгенерированный секретный ключ и API ключ Shodan.
