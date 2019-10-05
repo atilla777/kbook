@@ -77,11 +77,11 @@ python.exe vol.py -f дамп.dmp --profile=профиль pstree
 ```cmd
 python.exe vol.py -f дамп.dmp --profile=профиль svcscan
 ```
-####Перечень сетевых соединений
+#### Перечень сетевых соединений
 ```cmd
 python.exe vol.py -f дамп.dmp --profile=профиль netscan
 ```
-####Сохранить процесс в исполняемый файл
+#### Сохранить процесс в исполняемый файл
 ```cmd
 python.exe vol.py -f дамп.dmp --profile=профиль procdump --dump-dir ./output –p 868
 ```
