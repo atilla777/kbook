@@ -5,12 +5,12 @@
 ### Установка на Windows
 Если, к примеру, установить готовый пакет chocolatey, то в нём может не быть профилей последний версий Windows. Поэтому лучше выполнить установку следующим образом. 
 #### Установить python 2.7
-Установить python можно через (chocolatey)[https://chocolatey.org/packages?q=powershell] или через (обычный инсталятор)[https://www.python.org/downloads/windows/].
+Установить python можно через [chocolatey](https://chocolatey.org/packages?q=powershell) или через [обычный инсталятор](https://www.python.org/downloads/windows/).
 #### Установить зависимости
 * Distorm
-В папке(релизы)[https://github.com/gdabah/distorm/releases] необходимо найти полсденю версию для python 2.7 по ссылке **Python 2/3**. Например для версии 3.3.4(distorm3-3.3.4.win-amd64.exe)[https://github.com/gdabah/distorm/releases/tag/v3.3.4].
+В папке[релизы](https://github.com/gdabah/distorm/releases) необходимо найти полсденю версию для python 2.7 по ссылке **Python 2/3**. Например для версии 3.3.4 [distorm3-3.3.4.win-amd64.exe](https://github.com/gdabah/distorm/releases/tag/v3.3.4).
 * PyCrypto
-С этой (страницы)[http://www.voidspace.org.uk/python/modules.shtml#pycrypto ]необходимо скачать файл PyCrypto 2.6 for Python 2.7 64bit.
+С этой [страницы](http://www.voidspace.org.uk/python/modules.shtml#pycrypto) необходимо скачать файл PyCrypto 2.6 for Python 2.7 64bit.
 * openpyxl
 ```cmd
 pip install openpyxl
@@ -20,7 +20,7 @@ pip install openpyxl
 pip install ujson 
 ```
 * yara
-Скачать и установить последнюю версию yara для python 2.7 согласно инструкции на (странице)[https://dfironthemountain.wordpress.com/2018/10/29/installing-volatility-on-windows/].
+Скачать и установить последнюю версию yara для python 2.7 согласно инструкции на [странице](https://dfironthemountain.wordpress.com/2018/10/29/installing-volatility-on-windows/).
 #### Установить последнюю версию volatility
 ```cmd
 git clone https://github.com/volatilityfoundation/volatility.git
@@ -30,7 +30,7 @@ python.exe setyp.py
 ### Создание дампа памяти для исследования с помощью volatility
 #### Dumpit
 Дамп проще всего создать с помощью программы **dumpit** из пакета ****.
-Скачать этот пакет можно с следующей страницы (comae)[https://my.comae.com/login] (требуется регистрация).
+Скачать этот пакет можно с следующей страницы [comae](https://my.comae.com/login)(требуется регистрация).
 
 Для создания дампа памяти достаточно запустить файл dumpite.exe.
 
@@ -90,4 +90,4 @@ python.exe vol.py -f дамп.dmp --profile=профиль procdump --dump-dir .
 ```cmd
 python.exe vol.py -f дамп.dmp --profile=профиль cmdscan
 ```
-#### Полезные подсказки от (SANS)[https://digital-forensics.sans.org/media/volatility-memory-forensics-cheat-sheet.pdf ]
+#### Полезные подсказки от [SANS](https://digital-forensics.sans.org/media/volatility-memory-forensics-cheat-sheet.pdf)
