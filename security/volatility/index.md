@@ -71,7 +71,7 @@ dumpit.exe /t сервер /s 1 /rc4 ключ
 ```cmd
 dumpit.exe  /rc4 ключ /unpack зашифрованный.raw расшифрованный.raw
 ```
-#### Opensource утилита для снятия дампа
+#### Opensource утилита для снятия дампа (часть проекта rekall)
 [winpmem](https://github.com/Velocidex/c-aff4/releases)
 Эту информацию можно записать в имени файла дампа.
 ####
