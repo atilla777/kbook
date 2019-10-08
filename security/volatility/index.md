@@ -8,7 +8,7 @@
 Установить python можно через [chocolatey](https://chocolatey.org/packages?q=powershell) или через [обычный инсталятор](https://www.python.org/downloads/windows/).
 #### Установить зависимости
 * Distorm
-В папке[релизы](https://github.com/gdabah/distorm/releases) необходимо найти полсденю версию для python 2.7 по ссылке **Python 2/3**. Например для версии 3.3.4 [distorm3-3.3.4.win-amd64.exe](https://github.com/gdabah/distorm/releases/tag/v3.3.4).
+В папке [релизы](https://github.com/gdabah/distorm/releases) необходимо найти полсденю версию для python 2.7 по ссылке **Python 2/3**. Например для версии 3.3.4 [distorm3-3.3.4.win-amd64.exe](https://github.com/gdabah/distorm/releases/tag/v3.3.4).
 * PyCrypto
 С этой [страницы](http://www.voidspace.org.uk/python/modules.shtml#pycrypto) необходимо скачать файл PyCrypto 2.6 for Python 2.7 64bit.
 * openpyxl
