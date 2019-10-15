@@ -7,5 +7,5 @@
 ### [Исследование подозрительных документов MS Office](./office_anomaly/index.md)
 ### [Исследование PDF документов на предмет наличия вредоносного кода](./pdf_anomaly/index.md)
 ### [Сканирование](./scan/index.md)
-### [Sysmon](./sysmin/index.md)
+### [Sysmon](./sysmon/index.md)
 ### [OSINT - разведка на основе открытых источников](./osint/index.md)
