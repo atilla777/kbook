@@ -100,3 +100,29 @@ vagrant reload --provision
 ```
 config.vm.network :forwarded_port, guest: 80, host: 4567
 ```
+### Packer
+[Packer](https://www.packer.io/) - это утилита, с помощью которой можно создавать образ виртуальной машины (vagrant box) из iso образа установщика ОС.
+Установка packer описанеа на официальном сайт.
+Через chockolatey на Windows установка выглядит так
+```
+choco install packer
+```
+Образы можно создавать под несколько типов виртуальных платформ однавременно.
+Параметры необходимые packer build для построения образа виртуальной машины задаются в json файле.
+Например
+```
+packer\templates\windows_2008_r2_new.json
+```
+Такой образ может быть использован vagrant как base box для создания виртуальной машины.
+```
+packer build шаблон
+```
+Пример (образ создается только для virtualbox)
+```
+packer build --only=virtualbox-iso packer\templates\windows_2008_r2_new.json
+```
+В результате работы указанной выше команды будет создан файл с расширением .box (по сути это архив настроек виртуальной машины, диска этой машины и параметров vagrant).
+Этот образ можно добавить к текущему окружения vagrant следующей командой
+```
+agrant box add packer/builds/windows_2008_r2_*_0.1.0.box --name=metasploitable3-win2k8
+```
