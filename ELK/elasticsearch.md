@@ -27,6 +27,7 @@
 
 ### Установка
 Установка производится согласно [официальной документации](https://www.elastic.co/guide/en/elasticsearch/reference/current/_installation.html).
+Java SDK, необходимая для работы elasticsearch,  уже входит в сотав дистрибутива elasticsearch (находится в папке **sdk**).
 При устаноке на Windows следует избекать кирилических названий в папке размещения Elasticsearch. Например, разместить папку с elasticsearch по такому пути
 **c:\elasticsearch**
 #### Сбор информации о состоянии elasticsearch
