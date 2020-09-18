@@ -57,6 +57,8 @@ Plugin 'tpope/vim-rails'
 Plugin 'slim-template/vim-slim.git'
 Plugin 'tpope/vim-endwise'
 Plugin 'ngmy/vim-rubocop'
+Plugin 'rhysd/vim-crystal'
+Plugin 'fatih/vim-go'
 "Plugin 'kien/ctrlp.vim'
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -78,7 +80,9 @@ set guifont=DejaVu\ Sans\ Mono\ 18
 set nu
 set hidden
 set tabstop=2 shiftwidth=2 expandtab
-set listchars=tab:>-,trail:.
+"set listchars=tab:>-,trail:.
+:set listchars=tab:\|\ ,trail:-,extends:>,precedes:<,nbsp:+
+:highlight SpecialKey guifg=#333333 guibg=#111111
 set list
 set autochdir
 set nobackup
@@ -86,4 +90,5 @@ set guitablabel=%N:%M%t
 set laststatus=2
 :set lines=35 columns=130
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+let NERDTreeShowHidden=1
 ```
