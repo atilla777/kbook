@@ -92,3 +92,11 @@ set laststatus=2
 autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
 let NERDTreeShowHidden=1
 ```
+Для установки недостающих утилит для плагина go-vim после
+```
+:PluginInstall
+```
+надо выполнить
+```
+:GoInstallBinaries
+```
