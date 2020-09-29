@@ -1,5 +1,5 @@
 ##### [Главная страница](../index.md)
 ## DevOps
-### [Docker](./Docker.md)
+### [Docker](./docker.md)
 ### [Vagrant](./vagrant.md)
 ### [Chocolatey](./chocolatey.md)
