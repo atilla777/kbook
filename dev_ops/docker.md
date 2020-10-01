@@ -126,6 +126,10 @@ docker run <образ>
 ```bash
 docker run -ti ubuntu bash
 ```
+или (в alpine нет bash)
+```bash
+docker run -ti alpine sh
+```
 #### Запуск команды внутри запущенного контейнера
 ```bash
 docker exec <ID контейнера> <команда>
