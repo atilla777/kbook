@@ -204,7 +204,7 @@ docker run --rm <образ>
 ```
 #### Останвоить все контейнеры, удалить их и все тома
 ```bash
-docker container stop $(docker container ls –aq) && docker system prune –af ––volumes
+docker container stop $(docker container ls -aq) && docker system prune -af --volumes
 ```
 #### Остановить (SIG TERM) контейнер
 ```bash
