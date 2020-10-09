@@ -73,7 +73,8 @@ COPY file.txt /app/subfolder/
 ```
 COPY *.go /go/src/app/
 ```
-> Если при сборке образа появляется ошибка типа - надо проверить, что коируемый фал не указан в .dockerignore.
+> Если при сборке образа появляется ошибка типа failed to copy files: lstat /var/snap/docker/common/var-lib-docker/aufs/mnt/317b7b4de98894c6e725f2f32f0cff0096d5a1864ff4d5ec2545fa440d5dbf87/app/ra/config.yaml: not a directory
+- надо проверить, что коируемый фал не указан в .dockerignore bkb или что путь в котрый копируется файл (структура папок) сущесвтует.
 #### Команды запуска
 Вместо (а можно и совместно) CMD можно указать путь к скрипту в контейнере (ENTRYPOINT), который будет запускать первый процесс контейнера.
 Существует 2 формы использвания команд RUN, CMD и ENTRYPOINT - (shell форма)
