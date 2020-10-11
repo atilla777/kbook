@@ -265,6 +265,11 @@ COPY requirments.txt .
 RUN pip install -r requirments.txt
 COPY server.py
 ```
+Также надо учитывать,  что команды копирующие файлы по маске, не позволяют воспользоваться кэшированием
+```
+COPY Gemfile* ./
+```
+Команда выше (и соответсвенно все что ниже нее) не использует кэш.
 ### Работа с томами
 #### Просмотр содержимого тома на хосте
 Просмотр метаинформации о томе
@@ -366,10 +371,15 @@ docker-compose build ps
 docker-compose exec
 docker-compose images
 ```
-#### Разворачивание контейнеров из файла docker-compose.yml
+#### Разворачивание контейнеров (запуск сервисов) из файла docker-compose.yml
 ```bash
 sudo docker-compose up
 ```
+#### Выполнение команды в одном из контейнеров (сервисе) файла  docker-compose.yml
+```bASH
+docker-compose run --rm app bundle exec rake db:create
+```
+Указанная выше команда запустит и сервисы, указанные в зависимостях запускаемого сервиса.
 ### Ссылки
 * Docker в картинках - [оригинал](http://merrigrove.blogspot.com/2015/10/visualizing-docker-containers-and-images.html), [перевод](https://habr.com/post/272145/)
 * Проверка образов на уязвимости - [snyk.io](https://snyk.io/)
