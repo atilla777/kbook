@@ -371,6 +371,8 @@ docker-compose build ps
 docker-compose exec
 docker-compose images
 ```
+#### docker-compose.yaml
+Имена сервисов сановятся dns именами хостов, то есть в настройках в качестве имен серверов сервисов надо указывать имена сервисов.
 #### Разворачивание контейнеров (запуск сервисов) из файла docker-compose.yml
 ```bash
 sudo docker-compose up
@@ -378,6 +380,11 @@ sudo docker-compose up
 #### Выполнение команды в одном из контейнеров (сервисе) файла  docker-compose.yml
 ```bASH
 docker-compose run --rm app bundle exec rake db:create
+```
+#### Подключение к контейнеру (сервису) запущенному через docker-compose
+Подключение происходит также, как и к контейнеру запущенному через docker run
+```bash
+docker exec -it 93bb2751bc5f sh
 ```
 Указанная выше команда запустит и сервисы, указанные в зависимостях запускаемого сервиса.
 ### Ссылки
