@@ -193,6 +193,7 @@ gem install bundle
 mkdir dev
 cd dev
 git clone https://github.com/atilla777/rism
+```
 Установить Ruby on Rails и все зависимости:
 ```bash
 cd rism
