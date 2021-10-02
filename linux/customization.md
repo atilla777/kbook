@@ -1,6 +1,19 @@
 ##### [Linux](index.md)
 ##### [Главная страница](../index.md)
 ## Кастомизация рабочего окружения Linux
+#### Настройка псеевданима для запуска postgresql в контейнере
+Создать папку для постоянного хранения файлов базы (том docker)
+mkdir -p ```bash
+"$HOME/docker/volumes/postgres
+```
+Добавить в ./bashrc псевдоним (команда запуска docker с postgresql)
+```
+ alias postgres='docker run --rm --name postgres -e POSTGRES_PASSWORD=password -v="$HOME/docker/volumes/postgres:/var/lib/postg resql/data" -p 5432:5432 postgres:14'
+```
+запустить postgresql
+```bash
+postgres
+```
 #### Установка vi как редактора строки shell в текущем сеансе
 
 ```bash
