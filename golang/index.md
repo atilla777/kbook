@@ -107,7 +107,7 @@ defer connection.close
 import "log"
 ```
 
-#### Вывод сообщения в os.Stdoutput
+#### Вывод сообщения в os.Stdout
 ```go
 log.Println("сообщение")
 ```
